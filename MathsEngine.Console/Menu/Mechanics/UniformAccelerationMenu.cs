@@ -1,4 +1,4 @@
-﻿using MathsEngine.Modules.Mechanics.UniformAcceleration;
+﻿using MathsEngine.Core.Modules.Mechanics.UniformAcceleration;
 using MathsEngine.Console.Utils;
 using MathsEngine.Core.Utils.Exceptions;
 

@@ -1,8 +1,6 @@
-﻿using System;
-using MathsEngine.Core.Utils.Exceptions;
-using MathsEngine.Utils;
+﻿using MathsEngine.Core.Utils.Exceptions;
 
-namespace MathsEngine.Modules.Pure.Matrices
+namespace MathsEngine.Core.Modules.Pure.Matrices
 {
     public class MatrixBase : IEquatable<int[,]>
     {

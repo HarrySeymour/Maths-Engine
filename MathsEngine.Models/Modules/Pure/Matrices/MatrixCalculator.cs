@@ -1,6 +1,6 @@
 ﻿using MathsEngine.Core.Utils.Exceptions;
 
-namespace MathsEngine.Modules.Pure.Matrices
+namespace MathsEngine.Core.Modules.Pure.Matrices
 {
     public static class MatrixCalculator
     {

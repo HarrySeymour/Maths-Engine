@@ -1,7 +1,7 @@
 ﻿using MathsEngine.Core.Utils.Exceptions;
-using MathsEngine.Utils;
+using MathsEngine.Modules.Statistics.Dispersion;
 
-namespace MathsEngine.Modules.Statistics.Dispersion
+namespace MathsEngine.Core.Modules.Statistics.Dispersion
 {
     public class ContinuousTableCalculator : IStandardDeviation
     {

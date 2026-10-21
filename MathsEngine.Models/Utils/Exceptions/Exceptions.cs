@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MathsEngine.Core.Utils.Exceptions
+﻿namespace MathsEngine.Core.Utils.Exceptions
 {
     ///// General
 

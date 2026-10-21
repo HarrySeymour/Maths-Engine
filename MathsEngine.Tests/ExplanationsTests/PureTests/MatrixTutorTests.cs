@@ -1,6 +1,6 @@
 using MathsEngine.Core.Explanations.Pure.Matrices;
+using MathsEngine.Core.Modules.Pure.Matrices;
 using Xunit;
-using MathsEngine.Modules.Pure.Matrices;
 
 namespace MathsEngine.Tests.ExplanationsTests.PureTests;
 

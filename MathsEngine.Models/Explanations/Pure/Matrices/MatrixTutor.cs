@@ -1,6 +1,6 @@
 using System.Text;
 using MathsEngine.Core.Explanations.Models.Base;
-using MathsEngine.Modules.Pure.Matrices;
+using MathsEngine.Core.Modules.Pure.Matrices;
 
 namespace MathsEngine.Core.Explanations.Pure.Matrices;
 

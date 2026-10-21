@@ -1,8 +1,7 @@
 ﻿using System.Numerics;
 using MathsEngine.Core.Utils.Exceptions;
-using MathsEngine.Utils;
 
-namespace MathsEngine.Modules.Statistics
+namespace MathsEngine.Core.Modules.Statistics
 {
     internal class AverageCalculator<T> where T : INumber<T>
     {

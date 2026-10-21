@@ -1,7 +1,7 @@
 ﻿using MathsEngine.Core.Explanations.Models.Base;
 using MathsEngine.Modules.Pure.CoordinateGeometry;
 
-namespace MathsEngine.Core.Modules.Explanations.Pure.CoordinateGeometry;
+namespace MathsEngine.Core.Explanations.Pure.CoordinateGeometry;
 
 public static class CoordinateGeometryTutor
 {

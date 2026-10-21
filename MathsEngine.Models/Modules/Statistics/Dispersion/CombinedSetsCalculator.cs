@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using MathsEngine.Core.Utils.Exceptions;
-using MathsEngine.Utils;
+﻿using MathsEngine.Core.Utils.Exceptions;
+using MathsEngine.Modules.Statistics.Dispersion;
 
-namespace MathsEngine.Modules.Statistics.Dispersion.CombinedSets
+namespace MathsEngine.Core.Modules.Statistics.Dispersion
 {
     public class CombinedSetsCalculator : IStandardDeviation
     {

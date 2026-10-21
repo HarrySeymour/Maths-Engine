@@ -1,7 +1,7 @@
 ﻿using System;
 using MathsEngine.Modules.Pure;
 
-namespace MathsEngine.Utils
+namespace MathsEngine.Core.Utils
 {
     public sealed class Fraction : IComparable<Fraction>, IEquatable<Fraction>
     {

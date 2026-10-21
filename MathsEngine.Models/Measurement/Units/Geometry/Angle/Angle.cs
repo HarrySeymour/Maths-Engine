@@ -6,6 +6,7 @@ public class Angle : IMathematicalValue, IMeasurement, IEquatable<Angle>, ICompa
 {
     public double Value { get; }
     public AngleUnit Unit { get; }
+    
 
     public Angle(double value, AngleUnit unit)
     {

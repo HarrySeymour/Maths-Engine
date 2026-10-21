@@ -1,5 +1,5 @@
 ﻿using Xunit;
-using MathsEngine.Modules.Pure.Matrices;
+using MathsEngine.Core.Modules.Pure.Matrices;
 using MathsEngine.Core.Utils.Exceptions;
 
 namespace MathsEngine.Tests.PureTests.MatrixTests;

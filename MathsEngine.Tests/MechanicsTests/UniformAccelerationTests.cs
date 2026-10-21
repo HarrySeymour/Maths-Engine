@@ -1,6 +1,5 @@
-﻿using System;
-using MathsEngine.Core.Utils.Exceptions;
-using MathsEngine.Modules.Mechanics.UniformAcceleration;
+﻿using MathsEngine.Core.Utils.Exceptions;
+using MathsEngine.Core.Modules.Mechanics.UniformAcceleration;
 using Xunit;
 
 namespace MathsEngine.Tests.MechanicsTests

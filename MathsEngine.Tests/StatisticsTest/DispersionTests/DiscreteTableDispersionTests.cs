@@ -1,3 +1,4 @@
+using MathsEngine.Core.Modules.Statistics.Dispersion;
 using MathsEngine.Core.Utils.Exceptions;
 using MathsEngine.Modules.Statistics.Dispersion;
 using Xunit;

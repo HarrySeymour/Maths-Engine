@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using MathsEngine.Core.Explanations.Models.Base;
+using MathsEngine.Core.Modules.Statistics.Dispersion;
 using MathsEngine.Modules.Statistics.Dispersion;
 
 namespace MathsEngine.Core.Explanations.Statistics

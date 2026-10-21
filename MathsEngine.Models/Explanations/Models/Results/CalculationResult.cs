@@ -12,6 +12,7 @@ public class CalculationResult<T>
     public IEnumerable<ICalculationItem> CalculationFlow { get; set; }
     public string? Summary {get; set; }
 
+    public CalculationResult() { }
     public CalculationResult (CalculationType type, T value, string unit, IEnumerable<ICalculationItem> calculationFlow, string summary, int displayedPrecision = 2)
     {
         CalculationType =  type;

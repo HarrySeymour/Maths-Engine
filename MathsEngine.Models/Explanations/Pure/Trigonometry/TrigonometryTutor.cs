@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using MathsEngine.Core.Explanations.Models.Base;
 using MathsEngine.Core.Modules.Pure.Trigonometry;
 

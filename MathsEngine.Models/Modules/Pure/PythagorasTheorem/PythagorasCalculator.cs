@@ -1,6 +1,4 @@
-﻿using System;
-using MathsEngine.Core.Utils.Exceptions;
-using MathsEngine.Utils;
+﻿using MathsEngine.Core.Utils.Exceptions;
 
 namespace MathsEngine.Core.Modules.Pure.PythagorasTheorem
 {

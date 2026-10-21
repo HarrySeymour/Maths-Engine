@@ -7,7 +7,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Folder Include="Geometry\Enums\" />
 	  <Folder Include="Geometry\ThreeDimensional\" />
 	</ItemGroup>
 
