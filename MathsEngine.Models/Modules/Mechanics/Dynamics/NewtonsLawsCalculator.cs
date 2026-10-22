@@ -1,7 +1,6 @@
-﻿using System;
-using MathsEngine.Core.Utils.Exceptions;
+﻿using MathsEngine.Core.Utils.Exceptions;
 
-namespace MathsEngine.Modules.Mechanics.Dynamics
+namespace MathsEngine.Core.Modules.Mechanics.Dynamics
 {
     public static class NewtonsLawsCalculator
     {
@@ -11,11 +10,6 @@ namespace MathsEngine.Modules.Mechanics.Dynamics
         /// <param name="f"> Force. Can be null if it's the value to calculate.</param>
         /// <param name="m"> Mass. Can be null if it's the value to calculate.</param>
         /// <param name="a"> Acceleration. Can be null if it's the value to calculate.</param>
-        /// <returns></returns>
-        /// <exception cref="NullInputException"> Can be thrown if the input is missing more than one values. </exception>
-        /// <exception cref="NullMassException"> Can be thrown if mass entered is 0. </exception>
-        /// <exception cref="DivideByZeroException"> Can be thrown if a value is entered that would lead to a divide by 0 error.</exception>
-        /// <exception cref="InvalidOperationException"> Can be thrown if a calculation is not possible with the provided values.</exception>
         public static double? CalculateFma(double? f, double? m, double? a)
         {
             int missingCount =
@@ -56,8 +50,6 @@ namespace MathsEngine.Modules.Mechanics.Dynamics
         /// <param name="m"> Value for mass (Calculate this value if null)</param>
         /// <param name="a"> Value for acceleration (Calculate this value if null) </param>
         /// <returns> True if the equation is valid.</returns>
-        /// <exception cref="ArgumentException"></exception>
-        /// <exception cref="NullMassException"></exception>
         public static bool CheckValidCalculation(double? f, double? m, double? a)
         {
             if (f is null || m is null || a is null)

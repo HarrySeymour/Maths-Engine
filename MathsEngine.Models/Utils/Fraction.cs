@@ -1,5 +1,4 @@
-﻿using System;
-using MathsEngine.Modules.Pure;
+﻿using MathsEngine.Core.Modules.Pure;
 
 namespace MathsEngine.Core.Utils
 {

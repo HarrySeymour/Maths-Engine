@@ -8,6 +8,9 @@
 
 	<ItemGroup>
 	  <Folder Include="Geometry\ThreeDimensional\" />
+	  <Folder Include="Modules\Pure\Algebra\Differentiation\" />
+	  <Folder Include="Modules\Pure\Algebra\Inequalities\" />
+	  <Folder Include="Modules\Pure\Algebra\Integration\" />
 	</ItemGroup>
 
 </Project>

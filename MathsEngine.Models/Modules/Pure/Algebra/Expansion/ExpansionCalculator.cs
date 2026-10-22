@@ -2,7 +2,7 @@ using MathsEngine.Core.Modules.Pure.Algebra.Core;
 
 namespace MathsEngine.Core.Modules.Pure.Algebra.Expansion;
 
-public class ExpansionCalculator
+public static class ExpansionCalculator
 {
     /// <summary>
     /// Expands a raw algebraic string expression, e.g. "3x(2x + 1)" or "(x + 1)(x - 2)(x + 3)".
@@ -21,7 +21,7 @@ public class ExpansionCalculator
     {
         if (left is null) throw new ArgumentNullException(nameof(left));
         if (right is null) throw new ArgumentNullException(nameof(right));
-
+        
         return left * right;
     }
 

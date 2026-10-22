@@ -1,125 +1,40 @@
 ﻿using MathsEngine.Console.Menu.Statistics;
 using MathsEngine.Console.Menu.Mechanics;
 using MathsEngine.Console.Menu.Pure;
-using MathsEngine.Console.Utils;
 
 namespace MathsEngine.Console.Menu;
+
 internal static class Menu
 {
-    public static void MainMenu()
-    {
-        while (true)
+    public static void MainMenu() =>
+        MenuHelper.RunMenu("Welcome to the Maths Engine", new List<(string Label, Action Action)>
         {
-            System.Console.Clear();
-            System.Console.WriteLine("Welcome to the Maths Engine");
-            System.Console.WriteLine("1. Pure");
-            System.Console.WriteLine("2. Mechanics");
-            System.Console.WriteLine("3. Statistics");
-            System.Console.WriteLine("4. Exit Program");
-            int response = Parsing.GetMenuInput("Input: ", 4);
+            ("Pure", PureMenu),
+            ("Mechanics", MechanicsMenu),
+            ("Statistics", StatisticsMenu)
+        });
 
-            switch (response)
-            {
-                case 1:
-                    PureMenu();
-                    break;
-                case 2:
-                    MechanicsMenu();
-                    break;
-                case 3:
-                    StatisticsMenu();
-                    break;
-                case 4:
-                    return;
-            }
-        }
-    }
-
-    private static void PureMenu()
-    {
-        while (true)
+    private static void PureMenu() =>
+        MenuHelper.RunMenu("Welcome to the Pure Maths Menu", new List<(string Label, Action Action)>()
         {
-            System.Console.Clear();
-            System.Console.WriteLine("Welcome to the Pure Maths Menu");
-            System.Console.WriteLine("1. Pythagoras Theorem");
-            System.Console.WriteLine("2. Trigonometry");
-            System.Console.WriteLine("3. Matrices");
-            System.Console.WriteLine("4. Coordinate Geometry");
-            System.Console.WriteLine("5. Algebra");
-            System.Console.WriteLine("6. Back");
-            int response = Parsing.GetMenuInput("Input: ", 6);
+            ("Pythagoras Theorem", PythagorasMenu.Menu),
+            ("Trigonometry", TrigonometryMenu.Menu),
+            ("Matrices", MatrixMenu.Menu),
+            ("Coordinate Geometry", CoordinateGeometryMenu.Menu),
+            ("Algebra", AlgebraMenu.Menu)
+        });
 
-            switch (response)
-            {
-                case 1:
-                    PythagorasMenu.Menu();
-                    break;
-                case 2:
-                    TrigonometryMenu.Menu();
-                    break;
-                case 3:
-                    MatrixMenu.Menu();
-                    break;
-                case 4:
-                    CoordinateGeometryMenu.Menu();
-                    break;
-                case 5:
-                    AlgebraMenu.Menu();
-                    break;
-                case 6:
-                    return;
-            }
-        }
-    }
-
-    private static void MechanicsMenu()
-    {
-        while (true)
+    private static void MechanicsMenu() =>
+        MenuHelper.RunMenu("Welcome to the Mechanics Menu", new List<(string Label, Action Action)>()
         {
-            System.Console.Clear();
-            System.Console.WriteLine("Welcome to the Mechanics Menu");
-            System.Console.WriteLine("1. Uniform Acceleration");
-            System.Console.WriteLine("2. Newton's Laws Calculations");
-            System.Console.WriteLine("3. Main Menu");
-            int response = Parsing.GetMenuInput("Input: ", 3);
-            System.Console.Clear();
+            ("Uniform Acceleration", UniformAccelerationMenu.Menu),
+            ("Newton's Laws Calculations", NewtonsLawsMenu.Menu)
+        });
 
-            switch (response)
-            {
-                case 1:
-                    UniformAccelerationMenu.Menu();
-                    break;
-                case 2:
-                    NewtonsLawsMenu.Menu();
-                    break;
-                case 3:
-                    return;
-            }
-        }
-    }
-
-    private static void StatisticsMenu()
-    {
-        while (true)
+    private static void StatisticsMenu() =>
+        MenuHelper.RunMenu("Welcome to the Statistics Menu", new List<(string Label, Action Action)>
         {
-            System.Console.Clear();
-            System.Console.WriteLine("Welcome to the Statistics Menu");
-            System.Console.WriteLine("1. Bivariate Analysis");
-            System.Console.WriteLine("2. Standard Deviation");
-            System.Console.WriteLine("3. Main Menu");
-            int response = Parsing.GetMenuInput("Input: ", 3);
-
-            switch (response)
-            {
-                case 1:
-                    BivariateAnalysisMenu.Menu();
-                    break;
-                case 2:
-                    DispersionMenu.Menu();
-                    break;
-                case 3:
-                    return;
-            }
-        }
-    }
+            ("Bivariate Analysis", BivariateAnalysisMenu.Menu),
+            ("Standard Deviation", DispersionMenu.Menu)
+        });
 }

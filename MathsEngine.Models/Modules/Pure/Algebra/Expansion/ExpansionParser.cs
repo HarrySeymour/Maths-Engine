@@ -2,7 +2,7 @@
 
 namespace MathsEngine.Core.Modules.Pure.Algebra.Expansion;
 
-public class ExpansionParser
+public static class ExpansionParser
 {
     public static Polynomial Parse(string expression)
     {

@@ -13,7 +13,7 @@ namespace MathsEngine.Core.Modules.Pure.Matrices
         {
             if (matrix1 == null || matrix2 == null)
                 throw new NullInputException();
-            if (MatrixBase.CheckEmptyMatrix(matrix1)|| MatrixBase.CheckEmptyMatrix(matrix2))
+            if (MatrixBase.IsNull(matrix1)|| MatrixBase.IsNull(matrix2))
                 throw new NullInputException();
 
             if (matrix1.NumRows != matrix2.NumRows || matrix1.NumCols != matrix2.NumCols)
@@ -35,7 +35,7 @@ namespace MathsEngine.Core.Modules.Pure.Matrices
         {
             if (matrix1 == null || matrix2 == null)
                 throw new NullInputException();
-            if (MatrixBase.CheckEmptyMatrix(matrix1) || MatrixBase.CheckEmptyMatrix(matrix2))
+            if (MatrixBase.IsNull(matrix1) || MatrixBase.IsNull(matrix2))
                 throw new NullInputException();
 
             if (matrix1.NumRows != matrix2.NumRows || matrix1.NumCols != matrix2.NumCols)
@@ -63,7 +63,7 @@ namespace MathsEngine.Core.Modules.Pure.Matrices
         /// <exception cref="ArgumentException"></exception>
         public static MatrixBase ScalarMultiplication(MatrixBase matrix, double number)
         {
-            if (matrix == null || MatrixBase.CheckEmptyMatrix(matrix))
+            if (MatrixBase.IsNull(matrix))
                 throw new NullInputException();
 
             var result = new double[matrix.NumRows, matrix.NumCols];
@@ -80,7 +80,7 @@ namespace MathsEngine.Core.Modules.Pure.Matrices
 
         public static MatrixBase ScalarDivision(MatrixBase matrix, double number)
         {
-            if (matrix == null || MatrixBase.CheckEmptyMatrix(matrix))
+            if (MatrixBase.IsNull(matrix))
                 throw new NullInputException();
 
             if (number == 0)

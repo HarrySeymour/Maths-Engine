@@ -30,9 +30,6 @@ namespace MathsEngine.Core.Modules.Pure.Matrices
         /// <summary>
         /// A method that provides the identity matrix for a square matrix of the given size
         /// </summary>
-        /// <param name="size"> The matrix will be size * size. </param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentException"></exception>
         public static MatrixBase GetIdentityMatrix(int size)
         {
             if (size <= 0)
@@ -50,7 +47,7 @@ namespace MathsEngine.Core.Modules.Pure.Matrices
             return identityMatrix;
         }
 
-        public static bool CheckEmptyMatrix(MatrixBase matrix)
+        public static bool IsNull(MatrixBase matrix)
         {
             if (matrix.Matrix.GetLength(0) == 0)
                 return true;
@@ -60,11 +57,8 @@ namespace MathsEngine.Core.Modules.Pure.Matrices
         }
 
         /// <summary>
-        /// Calculates the determinant for any given matrix. ***AD - BC***
+        /// Calculates the determinant for any given matrix 2D. ***AD - BC***
         /// </summary>
-        /// <param name="matrix"></param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentException"></exception>
         public double CalculateDeterminant()
         {
             if (Matrix == null)

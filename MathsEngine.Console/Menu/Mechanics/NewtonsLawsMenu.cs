@@ -74,7 +74,7 @@ public static class NewtonsLawsMenu
             double? mass = Parsing.GetNullableDoubleInput("Enter the mass");
             double? acceleration = Parsing.GetNullableDoubleInput("Enter the acceleration");
 
-            bool isValid = Modules.Mechanics.Dynamics.NewtonsLawsCalculator.CheckValidCalculation(force, mass, acceleration);
+            bool isValid = Core.Modules.Mechanics.Dynamics.NewtonsLawsCalculator.CheckValidCalculation(force, mass, acceleration);
 
             if (isValid)
             {
@@ -126,7 +126,7 @@ public static class NewtonsLawsMenu
             return;
         }
 
-        double? calculatedValue = Modules.Mechanics.Dynamics.NewtonsLawsCalculator.CalculateFma(f, m, a);
+        double? calculatedValue = Core.Modules.Mechanics.Dynamics.NewtonsLawsCalculator.CalculateFma(f, m, a);
 
         if (f is null) f = calculatedValue;
         else if (m is null) m = calculatedValue;

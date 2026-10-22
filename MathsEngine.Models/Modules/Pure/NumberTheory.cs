@@ -1,4 +1,4 @@
-﻿namespace MathsEngine.Modules.Pure;
+﻿namespace MathsEngine.Core.Modules.Pure;
 
 public class NumberTheory
 {
@@ -47,7 +47,7 @@ public class NumberTheory
         if (number == 2) return true;
         if (number % 2 == 0) return false;
 
-        var boundary = (int)System.Math.Floor(System.Math.Sqrt(number));
+        var boundary = (int)Math.Floor(Math.Sqrt(number));
 
         for (int i = 3; i <= boundary; i += 2)
         {

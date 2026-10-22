@@ -1,8 +1,6 @@
-using System;
-using System.Collections.Generic;
 using MathsEngine.Core.Explanations.Models.Base;
 using MathsEngine.Core.Utils.Exceptions;
-using MathsEngine.Modules.Mechanics.Dynamics;
+using MathsEngine.Core.Modules.Mechanics.Dynamics;
 
 namespace MathsEngine.Core.Explanations.Mechanics
 {

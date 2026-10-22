@@ -86,7 +86,7 @@ public static class Parsing
     /// <returns>A Coordinate object.</returns>
     public static Coordinate ParseCoordinate(string prompt)
     {
-        System.Console.WriteLine(prompt); // e.g., "Enter coordinate A:"
+        System.Console.WriteLine(prompt);
         var x = GetDoubleInput("  Enter X value: ");
         var y = GetDoubleInput("  Enter Y value: ");
         return new Coordinate(x, y);
