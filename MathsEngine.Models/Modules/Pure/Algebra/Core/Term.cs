@@ -1,37 +1,10 @@
 ﻿namespace MathsEngine.Core.Modules.Pure.Algebra.Core;
 
-/// <summary>
-/// Represents a single algebraic term (e.g., 3x^2).
-/// </summary>
-public sealed class Term
+public sealed class Term(double coefficient, int power)
 {
-    /// <summary>
-    /// Gets the numeric coefficient of the term.
-    /// </summary>
-    public double Coefficient { get; set; }
-    
-    /// <summary>
-    /// Gets the exponent (power) applied to 'x'.
-    /// </summary>
-    public int Power { get; set; }
-
-    /// <summary>
-    /// Initializes a new <see cref="Term"/> using the default variable <c>x</c>.
-    /// </summary>
-    /// <param name="coefficient">The coefficient of the term.</param>
-    /// <param name="power">The exponent applied to <c>x</c>.</param>
-    public Term(double coefficient, int power)
-    {
-        Coefficient = coefficient;
-        Power = power;
-    }
-
-    public Term()
-    {
-        Coefficient = 0;
-        Power = 0;
-    }
-
+    public double Coefficient { get; set; } = coefficient;
+    public int Power { get; set; } = power;
+    public int Degree() => Power;
 
     public static bool IsLikeTerm(Term term1, Term term2)
     {
@@ -50,15 +23,6 @@ public sealed class Term
             return true;
         return false;
     }
-    
-
-    /// <summary>
-    /// This method provides the degree of the term. This is just the exponent.
-    /// This can be used in polynomials by sorting the presentation of the terms in descending degree order.
-    /// For example: 5x^2 + 3x - 5
-    /// </summary>
-    /// <returns> The exponent of the Term</returns>
-    public int Degree() => Power;
     
     public static Term operator + (Term term1, Term term2)
     {
